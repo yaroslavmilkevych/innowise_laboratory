@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lecture_1"
+version = "0.1.0"
+description = "Homework for Lecture_1 - Python environment, dependencies and Git setup"
+authors = ["Yaroslav Milkevych <yaroslav08101991@gmail.com>"]
+maintainers = ["Innowise"]
+readme = "README.md"
+repository = "https://github.com/yaroslavmilkevych/innowise_laboratory"
+keywords = ["python", "environment", "dependencies", "git", "innowise"]
+
+[tool.poetry.dependencies]
+python = ">=3.14"
+colorama = "0.4.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
