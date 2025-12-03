@@ -1,3 +1,17 @@
+CREATE TABLE IF NOT EXISTS students (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    fullname TEXT NOT NULL,
+    birth_year INTEGER NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS grades (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    student_id INTEGER NOT NULL,
+    subject TEXT NOT NULL,
+    grade INTEGER NOT NULL,
+    FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE
+);
+
 INSERT INTO students (fullname, birth_year) VALUES
         ('Alice Johnson',2005),
         ('Brian Smith',2004),
